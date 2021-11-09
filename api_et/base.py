@@ -78,6 +78,7 @@ CORS_ORIGIN_WHITELIST = [
 ]
 
 
+
 ROOT_URLCONF = 'api_et.urls'
 
 TEMPLATES = [
