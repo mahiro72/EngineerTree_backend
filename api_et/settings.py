@@ -9,9 +9,10 @@ https://docs.djangoproject.com/en/3.0/howto/deployment/asgi/
 
 import os
 
+from .base import *
+
 from django.core.asgi import get_asgi_application
 
-SECRET_KEY = os.environ['SECRET_KEY']
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'api_et.settings')
 
