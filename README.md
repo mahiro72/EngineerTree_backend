@@ -59,4 +59,13 @@ heroku run python manage.py createsuperuser
 
 <!-- heroku config:set DISABLE_COLLECTSTATIC=1 -->
 
+<!-- mysql==0.0.2
+mysql-connector-python==8.0.24
+mysqlclient==2.0.3
+pywin32==301 -->
+<!-- # pywin32==302 -->
+
+<!-- heroku config:set DISABLE_COLLECTSTATIC=1
+heroku config:set  -->
+
 
