@@ -31,9 +31,9 @@ $ myenv\scripts\activate
 
 その他いろいろ
 ```
-(myenv)  python manage.py makemigrations
-(myenv)  python manage.py migrate
-(myenv)  python manage.py createsuperuser
+(myenv)  python manage.py makemigrations --settings api_et.settings_dev
+(myenv)  python manage.py migrate --settings api_et.settings_dev
+(myenv)  python manage.py createsuperuser --settings api_et.settings_dev
 ```
 
 
@@ -42,7 +42,7 @@ $ myenv\scripts\activate
 
 サーバー起動
 ```
-(myenv)  python manage.py runserver
+(myenv)  python manage.py runserver --settings api_et.settings_dev
 
 ```
 
@@ -58,3 +58,5 @@ pywin32==301
 
 heroku config:set DISABLE_COLLECTSTATIC=1
 heroku config:set 
+
+
