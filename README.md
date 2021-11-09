@@ -1,17 +1,16 @@
 # Engineer Tree 🌳  
 
-バックエンド
+アプリ概要　[こちら](https://drive.google.com/file/d/15q8qybqer7ISOjVHXOt24rxkKpqLfF5h/view?usp=sharing)から
 
+## back end
 
 ## 使用技術  
 Python
-Django
-Django REST Framework
-Pandas,matplotlib
+Django , Django REST Framework , Pandas, matplotlib
 twitterAPI
 
-## 環境構築  
 
+## 環境構築  
 
 仮想環境構築  
 ```
@@ -46,14 +45,14 @@ $ myenv\scripts\activate
 
 ```
 
-
-
+## 本番環境  
+```
 heroku ps:scale web=1
 heroku open
 
 heroku run python manage.py migrate
 heroku run python manage.py createsuperuser
-
+```
 
 
 
