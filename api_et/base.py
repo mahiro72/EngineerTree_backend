@@ -74,7 +74,7 @@ MIDDLEWARE = [
 
 # reactからのアクセス許可
 CORS_ORIGIN_WHITELIST = [
-    'https://react-et.vercel.app',
+    'https://engineer-tree-react.herokuapp.com',
 ]
 
 
