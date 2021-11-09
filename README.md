@@ -48,15 +48,24 @@ $ myenv\scripts\activate
 
 
 
-heroku config:set DISABLE_COLLECTSTATIC=1
+heroku ps:scale web=1
+heroku open
 
-mysql==0.0.2
+heroku run python manage.py migrate
+heroku run python manage.py createsuperuser
+
+
+
+
+<!-- heroku config:set DISABLE_COLLECTSTATIC=1 -->
+
+<!-- mysql==0.0.2
 mysql-connector-python==8.0.24
 mysqlclient==2.0.3
-pywin32==301
+pywin32==301 -->
 <!-- # pywin32==302 -->
 
-heroku config:set DISABLE_COLLECTSTATIC=1
-heroku config:set 
+<!-- heroku config:set DISABLE_COLLECTSTATIC=1
+heroku config:set  -->
 
 
